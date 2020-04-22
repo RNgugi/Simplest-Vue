@@ -7,7 +7,7 @@
     <title>Document</title>
     <style type="text/css">
         body{
-            padding-left: 10px;
+            padding-left: 5%;
             font-family: arial;
             background-color: lightgray;
             color: #333;
@@ -16,14 +16,21 @@
             text-align: center;
             text-decoration: underline;
         }
+        .app{
+            text-decoration: bold;
+        }
+        input{
+            background-color: #161616;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <h1>Simplest Vue App!</h1>
     <p>My journey to leaning Vue starts here</p>
     <div id="app">
-        <input type="text" v-model="name">
-        <p>Ssup {{name}} </p>
+        <input type="text" v-model="name" >
+        <p> Ssup <strong>{{name}} </strong> </p>
     </div>
     
     <script>
